@@ -1,3 +1,4 @@
+import ButtonOutlined from "../../components/ButtonOutlined";
 import ModeratorCard from "../../components/ModeratorCard";
 
 const Moderators = () => {
@@ -5,9 +6,7 @@ const Moderators = () => {
     <div className="text-black font-sans">
       <header className="flex justify-between mt-6 mb-4">
         <h1 className="font-mont font-extrabold text-xl ">Moderator list</h1>
-        <button className="text-blue-500 text-xs font-medium px-3 py-2 border-2 border-blue-500 rounded-md">
-          Add New Moderator
-        </button>
+        <ButtonOutlined name="Add New Moderators" />
       </header>
       <div className="gap-8 flex flex-wrap">
         <ModeratorCard name="admin" />

@@ -1,0 +1,123 @@
+{
+  "data1": [
+    {
+      "image": "/avatar/profile_photo-1.svg",
+      "name": "Sierra Ferguson",
+      "phone": "+998 (99) 436-46-15",
+      "carComfort": "simple",
+      "orderedTime": "04.12.2021 20:30",
+      "startLocation": "пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston",
+      "finishLocation": "пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston",
+      "income": "50 300 000 SUM",
+      "startingValue": 3000,
+      "freeKm": "0",
+      "perKmValue": 1200,
+      "waitingTime": 3,
+      "outOfBranch": 3
+    },
+    {
+      "image": "/avatar/profile_photo-2.svg",
+      "name": "Sierra Ferguson",
+      "phone": "+998 (99) 436-46-15",
+      "carComfort": "otra",
+      "orderedTime": "04.12.2021 20:30",
+      "startLocation": "21 Hamidulla Oripov ko'chasi, Тошкент, Oʻzbekiston",
+      "finishLocation": "21 Hamidulla Oripov ko'chasi, Тошкент, Oʻzbekiston",
+      "income": "300 000 SUM",
+      "startingValue": 10000,
+      "freeKm": "2 km",
+      "perKmValue": 3400,
+      "waitingTime": 5,
+      "outOfBranch": 5
+    },
+    {
+      "image": "/avatar/profile_photo-3.svg",
+      "name": "Sierra Ferguson",
+      "phone": "+998 (99) 436-46-15",
+      "carComfort": "convenient",
+      "orderedTime": "04.12.2021 20:24",
+      "startLocation": "76 Фарғона Йўли, Тошкент, Oʻzbekiston",
+      "finishLocation": "76 Фарғона Йўли, Тошкент, Oʻzbekiston",
+      "income": "5 300 000 SUM",
+      "startingValue": 1000,
+      "freeKm": "12 km",
+      "perKmValue": 5600,
+      "waitingTime": 2,
+      "outOfBranch": 2
+    },
+    {
+      "image": "/avatar/profile_photo-4.svg",
+      "name": "Sierra Ferguson",
+      "phone": "+998 (99) 436-46-15",
+      "carComfort": "convenient",
+      "orderedTime": "17.11.2021 12:19",
+      "startLocation": "13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston",
+      "finishLocation": "13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston",
+      "income": "500 300 000 SUM",
+      "startingValue": 5000,
+      "freeKm": "7 km",
+      "perKmValue": 14000,
+      "waitingTime": 3,
+      "outOfBranch": 3
+    },
+    {
+      "image": "/avatar/profile_photo-5.svg",
+      "name": "Sierra Ferguson",
+      "phone": "+998 (99) 436-46-15",
+      "carComfort": "convenient",
+      "orderedTime": "04.12.2021 20:30",
+      "startLocation": "1 Kuyi Talarik ko'chasi, Тошкент 100091, Oʻzbekiston",
+      "finishLocation": "1 Kuyi Talarik ko'chasi, Тошкент 100091, Oʻzbekiston",
+      "income": "50 300 000 SUM",
+      "startingValue": 7000,
+      "freeKm": "0",
+      "perKmValue": 3600,
+      "waitingTime": 4,
+      "outOfBranch": 4
+    }
+  ],
+  "data2": [
+    {
+      "image": "/driversPhotos/photoDriver1.svg",
+      "name": "Maharrm Hasanli",
+      "phone": "+998 (99) 436-46-15",
+      "orders": 5,
+      "income": 98
+    },
+    {
+      "image": "/driversPhotos/photoDriver5.svg",
+      "name": "Gina Garza",
+      "phone": "+998 (99) 158-10-15",
+      "orders": 5,
+      "income": 15
+    },
+    {
+      "image": "/driversPhotos/photoDriver6.svg",
+      "name": "Brian Reed",
+      "phone": "+998 (99) 436-46-15",
+      "orders": 5,
+      "income": 23
+    },
+    {
+      "image": "/driversPhotos/photoDriver2.svg",
+      "name": "Tammy Spencer",
+      "phone": "+998 (99) 436-46-15",
+      "orders": 5,
+      "income": 98
+    },
+    {
+      "image": "/driversPhotos/photoDriver3.svg",
+      "name": "Joseph Brooks",
+      "phone": "+998 (99) 436-46-15",
+      "orders": 5,
+      "income": 98
+    },
+    {
+      "image": "/driversPhotos/photoDriver4.svg",
+      "name": "Juan Steward",
+      "phone": "+998 (99) 436-46-15",
+      "orders": 5,
+      "income": 98
+    }
+  ]
+}

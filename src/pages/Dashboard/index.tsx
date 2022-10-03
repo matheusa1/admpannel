@@ -1,18 +1,17 @@
+import { useState } from "react";
+
 import * as Checkbox from "@radix-ui/react-checkbox";
 import * as Toggle from "@radix-ui/react-toggle";
 
+import * as data from "../../data/template.json";
+
 import Graphic from "../../assets/images/graphic.svg";
-import photoDriver1 from "../../assets/images/photoDriver1.svg";
-import photoDriver2 from "../../assets/images/photoDriver2.svg";
-import photoDriver3 from "../../assets/images/photoDriver3.svg";
-import photoDriver4 from "../../assets/images/photoDriver4.svg";
-import photoDriver5 from "../../assets/images/photoDriver5.svg";
-import photoDriver6 from "../../assets/images/photoDriver6.svg";
-import avatar1 from "../../assets/images/avatar/profile_photo-1.svg";
-import avatar2 from "../../assets/images/avatar/profile_photo-2.svg";
-import avatar3 from "../../assets/images/avatar/profile_photo-3.svg";
-import avatar4 from "../../assets/images/avatar/profile_photo-4.svg";
-import avatar5 from "../../assets/images/avatar/profile_photo-5.svg";
+import photoDriver1 from "/driversPhotos/photoDriver1.svg";
+import photoDriver2 from "/driversPhotos/photoDriver2.svg";
+import photoDriver3 from "/driversPhotos/photoDriver3.svg";
+import photoDriver4 from "/driversPhotos/photoDriver4.svg";
+import photoDriver5 from "/driversPhotos/photoDriver5.svg";
+import photoDriver6 from "/driversPhotos/photoDriver6.svg";
 
 import {
   RiFolderOpenFill,
@@ -26,6 +25,8 @@ import TopDrivers from "../../components/TopDrivers";
 import DashboardStat from "../../components/DashboardStat";
 
 const Dashboard = () => {
+  const [checkAll, setCheckAll] = useState(false);
+
   return (
     // container
     <div className="flex flex-col">
@@ -85,116 +86,76 @@ const Dashboard = () => {
             Top drivers
           </h1>
           <div className="flex flex-col gap-3">
-            <TopDrivers
-              picture={photoDriver1}
-              name="Maharrm Hasanli"
-              phone="+998 (99) 436-46-15"
-              orders={5}
-              income={98}
-            />
-            <TopDrivers
-              picture={photoDriver5}
-              name="Gina Garza"
-              phone="+998 (99) 158-10-15"
-              orders={5}
-              income={15}
-            />
-            <TopDrivers
-              picture={photoDriver6}
-              name="Brian Reed"
-              phone="+998 (99) 436-46-15"
-              orders={5}
-              income={23}
-            />
-            <TopDrivers
-              picture={photoDriver2}
-              name="Tammy Spencer"
-              phone="+998 (99) 436-46-15"
-              orders={5}
-              income={98}
-            />
-            <TopDrivers
-              picture={photoDriver3}
-              name="Joseph Brooks"
-              phone="+998 (99) 436-46-15"
-              orders={5}
-              income={98}
-            />
-            <TopDrivers
-              picture={photoDriver4}
-              name="Juan Steward"
-              phone="+998 (99) 436-46-15"
-              orders={5}
-              income={98}
-            />
+            {data.data2.map((item, index) => {
+              return (
+                <div key={index}>
+                  <TopDrivers
+                    picture={item.image}
+                    name={item.name}
+                    phone={item.phone}
+                    income={item.income}
+                    orders={item.orders}
+                  />
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
       {/* Botside */}
-      <div className="grid grid-cols-7 grid-rows-1 text-black bg-[#F7F8FA] py-4 mb-4 rounded-lg">
-        <Checkbox.Root className="w-6 h-6 bg-white border-2 rounded p-[2px] mx-auto">
-          <Checkbox.Indicator>
-            <RiCheckLine />
-          </Checkbox.Indicator>
-        </Checkbox.Root>
-        <strong>User</strong>
-        <strong className="mx-auto">Car Comfort</strong>
-        <strong className="mx-auto">Ordered Time</strong>
-        <strong className="mx-auto">Start Location</strong>
-        <strong className="mx-auto">Finish Location</strong>
-        <strong className="mx-auto">Income</strong>
+      <div className="flex text-black bg-[#F7F8FA] py-4 mb-4 rounded-lg">
+        <div className="basis-1/12 flex justify-center">
+          <Checkbox.Root
+            className="w-6 h-6 bg-white border-2 rounded p-[2px] mx-auto"
+            onCheckedChange={() => setCheckAll(!checkAll)}
+          >
+            <Checkbox.Indicator>
+              <RiCheckLine />
+            </Checkbox.Indicator>
+          </Checkbox.Root>
+        </div>
+        <strong className="basis-3/12 ">User</strong>
+        <strong className="basis-3/12 flex justify-center">Car Comfort</strong>
+        <strong className="basis-3/12 flex justify-center">Ordered Time</strong>
+        <strong className="basis-3/12 flex justify-center">
+          Start Location
+        </strong>
+        <strong className="basis-3/12 flex justify-center">
+          Finish Location
+        </strong>
+        <strong className="basis-3/12 flex justify-center">Income</strong>
       </div>
       <div className="flex flex-col gap-4 border-b-2 pb-8 full border-b-slate-50">
-        <DashboardStat
-          image={avatar1}
-          name="Sierra Ferguson"
-          phone="+998 (99) 436-46-15"
-          carConfort="simple"
-          orderedTime="04.12.2021 20:30"
-          startLocation="пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston"
-          finishLocation="пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston"
-          income="50 300 000 SUM"
-        />
-        <DashboardStat
-          image={avatar2}
-          name="Sierra Ferguson"
-          phone="+998 (99) 436-46-15"
-          carConfort="otra"
-          orderedTime="04.12.2021 20:30"
-          startLocation="21 Hamidulla Oripov ko'chasi, Тошкент, Oʻzbekiston"
-          finishLocation="21 Hamidulla Oripov ko'chasi, Тошкент, Oʻzbekiston"
-          income="300 000 SUM"
-        />
-        <DashboardStat
-          image={avatar3}
-          name="Sierra Ferguson"
-          phone="+998 (99) 436-46-15"
-          carConfort="convenient"
-          orderedTime="04.12.2021 20:24"
-          startLocation="76 Фарғона Йўли, Тошкент, Oʻzbekiston"
-          finishLocation="76 Фарғона Йўли, Тошкент, Oʻzbekiston"
-          income="5 300 000 SUM"
-        />
-        <DashboardStat
-          image={avatar4}
-          name="Sierra Ferguson"
-          phone="+998 (99) 436-46-15"
-          carConfort="convenient"
-          orderedTime="17.11.2021 12:19	"
-          startLocation="13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston"
-          finishLocation="13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston"
-          income="500 300 000 SUM"
-        />
-        <DashboardStat
-          image={avatar5}
-          name="Sierra Ferguson"
-          phone="+998 (99) 436-46-15"
-          carConfort="convenient"
-          orderedTime="04.12.2021 20:30	"
-          startLocation="1 Kuyi Talarik ko'chasi, Тошкент 100091, Oʻzbekiston"
-          finishLocation="1 Kuyi Talarik ko'chasi, Тошкент 100091, Oʻzbekiston"
-          income="50 300 000 SUM"
-        />
+        {data.data1.map((item, index) => {
+          return checkAll ? (
+            <div key={index}>
+              <DashboardStat
+                active
+                image={item.image}
+                carComfort={item.carComfort}
+                finishLocation={item.finishLocation}
+                income={item.income}
+                name={item.name}
+                orderedTime={item.orderedTime}
+                phone={item.phone}
+                startLocation={item.startLocation}
+              />
+            </div>
+          ) : (
+            <div key={index}>
+              <DashboardStat
+                image={item.image}
+                carComfort={item.carComfort}
+                finishLocation={item.finishLocation}
+                income={item.income}
+                name={item.name}
+                orderedTime={item.orderedTime}
+                phone={item.phone}
+                startLocation={item.startLocation}
+              />
+            </div>
+          );
+        })}
       </div>
       <div className="text-black flex justify-end items-center mt-5 gap-4">
         <strong>1-2 items</strong>

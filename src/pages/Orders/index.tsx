@@ -15,7 +15,7 @@ const Orders = () => {
 
         <div className="col-span-2 p-6 flex flex-col shadow-xl rounded-xl border-[1px] border-[#F2ECFF]">
           <div className="w-full gap-5 flex mb-4">
-            <div className="flex flex-col w-full">
+            <div className="flex flex-col w-full">  
               <label htmlFor="number" className="mb-2 font-sans text-sm font-semibold ">
                 Phone number:
               </label>
