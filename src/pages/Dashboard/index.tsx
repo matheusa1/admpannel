@@ -103,7 +103,7 @@ const Dashboard = () => {
         </div>
       </div>
       {/* Botside */}
-      <div className="flex text-black bg-[#F7F8FA] py-4 mb-4 rounded-lg">
+      <div className="flex text-black bg-gridHead py-4 mb-4 rounded-lg">
         <div className="basis-1/12 flex justify-center">
           <Checkbox.Root
             className="w-6 h-6 bg-white border-2 rounded p-[2px] mx-auto"
@@ -159,16 +159,16 @@ const Dashboard = () => {
       </div>
       <div className="text-black flex justify-end items-center mt-5 gap-4">
         <strong>1-2 items</strong>
-        <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
-          <RiArrowLeftSLine className="fill-[#EFF0F4]" />
+        <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
+          <RiArrowLeftSLine className="fill-light-gray" />
         </Toggle.Root>
         <Toggle.Root className="w-10 h-10 bg-blue-600 text-white rounded ">
           <span>1</span>
         </Toggle.Root>
-        <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded">
+        <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded">
           <span>2</span>
         </Toggle.Root>
-        <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
+        <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
           <RiArrowRightSLine />
         </Toggle.Root>
       </div>

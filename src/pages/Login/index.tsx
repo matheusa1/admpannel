@@ -47,7 +47,7 @@ const Login = () => {
               name="phoneNumber"
               type="text"
               id="phoneNumber"
-              className="bg-[##FCFDFE] h-10 py-3 px-4 text-subtitle text-sm border-solid border-[1px] border-bg-black rounded-lg"
+              className="bg-[#FCFDFE] h-10 py-3 px-4 text-subtitle text-sm border-solid border-[1px] border-bg-black rounded-lg"
               placeholder="Enter your phone number"
             />
           </div>
@@ -63,7 +63,7 @@ const Login = () => {
               name="password"
               type="password"
               id="password"
-              className="bg-[##FCFDFE] h-10 py-3 px-4 text-subtitle text-sm border-solid border-[1px] border-bg-black rounded-lg"
+              className="bg-[#FCFDFE] h-10 py-3 px-4 text-subtitle text-sm border-solid border-[1px] border-bg-black rounded-lg"
               placeholder="Enter your password"
             />
           </div>

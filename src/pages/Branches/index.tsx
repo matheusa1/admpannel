@@ -15,7 +15,7 @@ const Branches = () => {
           <h1 className="font-mont font-extrabold text-xl">Branches list</h1>
           <div className="flex relative">
             <input
-              className="py-4 pl-5 pr-9 w-60 border-[1px] rounded-full border-[#F2ECFF] text-subtitle font-sans font-semibold text-sm"
+              className="py-4 pl-5 pr-9 w-60 border-[1px] rounded-full border-light-gray text-subtitle font-sans font-semibold text-sm"
               type="text"
               placeholder="Search By Name"
             />
@@ -26,7 +26,7 @@ const Branches = () => {
       </header>
 
       <main className="pt-4">
-        <div className="font-mont font-semibold text-xs flex flex-row py-4 px-5 bg-[#F7F8FA] rounded-xl">
+        <div className="font-mont font-semibold text-xs flex flex-row py-4 px-5 bg-gridHead rounded-xl">
           <div className="basis-1/12">
             <span>Nº</span>
           </div>
@@ -66,20 +66,20 @@ const Branches = () => {
         </div>
       </main>
 
-      <footer className="flex items-center justify-between pt-7 border-t-[1px] border-t-[#EFF0F4]">
+      <footer className="flex items-center justify-between pt-7 border-t-[1px] border-t-light-gray">
         <h1 className="font-poppins font-medium text-base">Total Users: 98</h1>
         <div className="text-black flex items-center gap-4">
           <strong>1-2 of items</strong>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
-            <RiArrowLeftSLine className="fill-[#EFF0F4]" />
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
+            <RiArrowLeftSLine className="fill-light-gray" />
           </Toggle.Root>
           <Toggle.Root className="w-10 h-10 bg-blue-600 text-white rounded ">
             <span>1</span>
           </Toggle.Root>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded">
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded">
             <span>2</span>
           </Toggle.Root>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
             <RiArrowRightSLine />
           </Toggle.Root>
         </div>

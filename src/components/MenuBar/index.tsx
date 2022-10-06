@@ -38,7 +38,7 @@ const MenuBar = () => {
       <div className={`ml-6 flex items-center mb-9`}>
         <img src={avatar} className={isOpenMenu ? "" : "mr-4"} />
         <div className={`${isOpenMenu ? "" : "hidden"} flex flex-col ml-2`}>
-          <strong className={` font-poppins font-semibold text-lg `}>
+          <strong className={` font-poppins font-semibold text-lg text-white`}>
             Samantha
           </strong>
           <span className="font-poppins font-normal text-xs text-subtitle truncate">
@@ -67,7 +67,7 @@ const MenuBar = () => {
         >
           MAIN MENU
         </h1>
-        <div className="ml-2">
+        <div className="ml-2 flex flex-col gap-2">
           {param.pathname === `/` ? (
             <MenuItem
               visibility={isOpenMenu ? "" : "hidden"}

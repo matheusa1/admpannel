@@ -13,11 +13,16 @@
       "freeKm": "0",
       "perKmValue": 1200,
       "waitingTime": 3,
-      "outOfBranch": 3
+      "outOfBranch": 3,
+      "totalRides": 132,
+      "totalFinished": 6,
+      "birthDate": "9/5/1990",
+      "state": "Created",
+      "timeWorking": "Some Time Ago"
     },
     {
       "image": "/avatar/profile_photo-2.svg",
-      "name": "Sierra Ferguson",
+      "name": "Nataniel Lawrence",
       "phone": "+998 (99) 436-46-15",
       "carComfort": "otra",
       "orderedTime": "04.12.2021 20:30",
@@ -28,11 +33,16 @@
       "freeKm": "2 km",
       "perKmValue": 3400,
       "waitingTime": 5,
-      "outOfBranch": 5
+      "outOfBranch": 5,
+      "totalRides": 10,
+      "totalFinished": 3,
+      "birthDate": "6/5/1973",
+      "state": "Active",
+      "timeWorking": "1 Month Ago"
     },
     {
       "image": "/avatar/profile_photo-3.svg",
-      "name": "Sierra Ferguson",
+      "name": "Alberto Daniels",
       "phone": "+998 (99) 436-46-15",
       "carComfort": "convenient",
       "orderedTime": "04.12.2021 20:24",
@@ -43,11 +53,16 @@
       "freeKm": "12 km",
       "perKmValue": 5600,
       "waitingTime": 2,
-      "outOfBranch": 2
+      "outOfBranch": 2,
+      "totalRides": 100,
+      "totalFinished": 12,
+      "birthDate": "11/4/1964",
+      "state": "Created",
+      "timeWorking": "3 Days Ago"
     },
     {
       "image": "/avatar/profile_photo-4.svg",
-      "name": "Sierra Ferguson",
+      "name": "Mary Mills",
       "phone": "+998 (99) 436-46-15",
       "carComfort": "convenient",
       "orderedTime": "17.11.2021 12:19",
@@ -58,11 +73,16 @@
       "freeKm": "7 km",
       "perKmValue": 14000,
       "waitingTime": 3,
-      "outOfBranch": 3
+      "outOfBranch": 3,
+      "totalRides": 7,
+      "totalFinished": 1,
+      "birthDate": "11/3/1963",
+      "state": "Active",
+      "timeWorking": "Some Time Ago"
     },
     {
       "image": "/avatar/profile_photo-5.svg",
-      "name": "Sierra Ferguson",
+      "name": "Bessie Spencer",
       "phone": "+998 (99) 436-46-15",
       "carComfort": "convenient",
       "orderedTime": "04.12.2021 20:30",
@@ -73,7 +93,12 @@
       "freeKm": "0",
       "perKmValue": 3600,
       "waitingTime": 4,
-      "outOfBranch": 4
+      "outOfBranch": 4,
+      "totalRides": 13,
+      "totalFinished": 7,
+      "birthDate": "1/2/1949",
+      "state": "Active",
+      "timeWorking": "2 Weeks Ago"
     }
   ],
   "data2": [
@@ -118,6 +143,33 @@
       "phone": "+998 (99) 436-46-15",
       "orders": 5,
       "income": 98
+    }
+  ],
+  "branches": [
+    {
+      "id": 1,
+      "branchName": "Magic City Park",
+      "freeKm": "пл. Беш Агач, Furkat Street, Tashkent, Oʻzbekiston"
+    },
+    {
+      "id": 2,
+      "branchName": "Funlandia",
+      "freeKm": "9932+GQF, Тошкент, Oʻzbekiston"
+    },
+    {
+      "id": 3,
+      "branchName": "Toshkent Xalqaro Aeroporti",
+      "freeKm": "13 Kumarik ko'chasi, Tashkent 100167, Oʻzbekiston"
+    },
+    {
+      "id": 4,
+      "branchName": "Сергели тумани ҳокимияти",
+      "freeKm": "1 Anna Axmatova ko'chasi, Тошкент 100085, Oʻzbekiston"
+    },
+    {
+      "id": 5,
+      "branchName": "Otdel Statistiki Yakkasarayskogo Rayona",
+      "freeKm": "Askiya ko'chasi, Тошкент, Oʻzbekiston"
     }
   ]
 }

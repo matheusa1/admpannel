@@ -13,7 +13,7 @@ const Orders = () => {
       <div className="grid grid-cols-3 grid-rows-2 gap-6">
         <img src={Map} className="col-span-3 w-full rounded-xl" />
 
-        <div className="col-span-2 p-6 flex flex-col shadow-xl rounded-xl border-[1px] border-[#F2ECFF]">
+        <div className="col-span-2 p-6 flex flex-col shadow-xl rounded-xl border-[1px] border-light-gray">
           <div className="w-full gap-5 flex mb-4">
             <div className="flex flex-col w-full">  
               <label htmlFor="number" className="mb-2 font-sans text-sm font-semibold ">
@@ -22,7 +22,7 @@ const Orders = () => {
               <input
                 id="number"
                 type="text"
-                className="p-3 w-full border-[1px] border-[#E4E6EE] rounded-xl"
+                className="p-3 w-full border-[1px] border-light-gray rounded-xl"
                 placeholder="+998 (--) --- -- --"
               />
             </div>
@@ -33,7 +33,7 @@ const Orders = () => {
               <input
                 id="payment"
                 type="text"
-                className="p-3 w-full border-[1px] border-[#E4E6EE] rounded-xl"
+                className="p-3 w-full border-[1px] border-light-gray rounded-xl"
                 placeholder="Cash"
               />
             </div>
@@ -53,13 +53,13 @@ const Orders = () => {
 
           <div className="flex flex-col h-full">
             <label htmlFor="textarea" className="mb-2 font-sans text-sm font-semibold">Comment:</label>
-            <textarea className="p-3 w-full h-full border-[1px] border-[#E4E6EE] rounded-xl" id="textarea" placeholder="You can leave your opinion"></textarea>
+            <textarea className="p-3 w-full h-full border-[1px] border-light-gray rounded-xl" id="textarea" placeholder="You can leave your opinion"></textarea>
           </div>
         </div>
 
 
         <div className="shadow-xl rounded-xl">
-          <div className="grid grid-cols-2 bg-[#EFF0F4] rounded-t-xl h-10 items-center font-mont font-semibold text-sm border-[1px] border-[#EFF0F4]">
+          <div className="grid grid-cols-2 bg-light-gray rounded-t-xl h-10 items-center font-mont font-semibold text-sm border-[1px] border-light-gray">
             <span className="mx-auto">Class</span>
             <span className="mx-auto">Price</span>
           </div>

@@ -56,7 +56,7 @@ const CarClasses = () => {
                       Name:
                     </label>
                     <input
-                      className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                      className="px-4 py-2 border-[1px] border-light-gray rounded"
                       id="name"
                       name="name"
                       placeholder="Spark"
@@ -94,7 +94,7 @@ const CarClasses = () => {
                         Starting Value
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="startingValue"
                         name="startingValue"
                         placeholder="3000"
@@ -106,7 +106,7 @@ const CarClasses = () => {
                         Free Km
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="freeKm"
                         name="freeKm"
                         placeholder="0"
@@ -118,7 +118,7 @@ const CarClasses = () => {
                         Per Km Value
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="perKmValue"
                         name="perKmValue"
                         placeholder="1200"
@@ -130,7 +130,7 @@ const CarClasses = () => {
                         Per Minute Value
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="perMinuteValue"
                         name="perMinuteValue"
                         placeholder="300"
@@ -142,7 +142,7 @@ const CarClasses = () => {
                         Waiting Time
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="waitingTime"
                         name="waitingTime"
                         placeholder="1200"
@@ -154,7 +154,7 @@ const CarClasses = () => {
                         Out of Branch
                       </label>
                       <input
-                        className="px-4 py-2 border-[1px] border-[#E4E6EE] rounded"
+                        className="px-4 py-2 border-[1px] border-light-gray rounded"
                         id="outOfBranch"
                         name="outOfBranch"
                         placeholder="300"
@@ -178,7 +178,7 @@ const CarClasses = () => {
       </header>
 
       <main>
-        <div className="w-full rounded-xl px-3 py-4 bg-[#F7F8FA] flex items-center font-mont font-semibold text-sm">
+        <div className="w-full rounded-xl px-3 py-4 bg-gridHead flex items-center font-mont font-semibold text-sm">
           <div className="basis-1/12">
             <Checkbox.Root className="w-6 h-6 bg-white border-2 p-0.5 rounded">
               <Checkbox.Indicator>
@@ -215,20 +215,20 @@ const CarClasses = () => {
         </div>
       </main>
 
-      <footer className="flex items-center justify-between pt-7 border-t-[1px] border-t-[#EFF0F4]">
+      <footer className="flex items-center justify-between pt-7 border-t-[1px] border-t-light-gray">
         <h1 className="font-poppins font-medium text-base">Total Users: 98</h1>
         <div className="text-black flex items-center gap-4">
           <strong>1-2 of items</strong>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
-            <RiArrowLeftSLine className="fill-[#EFF0F4]" />
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
+            <RiArrowLeftSLine className="fill-light-gray" />
           </Toggle.Root>
           <Toggle.Root className="w-10 h-10 bg-blue-600 text-white rounded ">
             <span>1</span>
           </Toggle.Root>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded">
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded">
             <span>2</span>
           </Toggle.Root>
-          <Toggle.Root className="w-10 h-10 border-[1px] border-[#EFF0F4] rounded p-3">
+          <Toggle.Root className="w-10 h-10 border-[1px] border-light-gray rounded p-3">
             <RiArrowRightSLine />
           </Toggle.Root>
         </div>

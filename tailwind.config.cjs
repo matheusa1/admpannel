@@ -20,6 +20,8 @@ module.exports = {
         black: "#2E3A59",
         bgGreen: "rgba(36, 193, 143, 0.1)",
         bgGreenActive: "#24C18F",
+        gridHead: "#F7F8FA",
+        "light-gray": "#EFF0F4",
       },
       backgroundImage: {
         shs: "linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 66.67%);",
