@@ -86,6 +86,7 @@ const Drivers = () => (
         return (
           <div key={index}>
             <DriverInfo
+              id={driver.id}
               firstName={firstName}
               lastName={lastName}
               birthDate={driver.birthDate}

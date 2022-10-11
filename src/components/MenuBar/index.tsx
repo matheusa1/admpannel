@@ -23,7 +23,7 @@ const MenuBar = () => {
 
   const [isOpenMenu, setIsOpenMenu] = useState(
     window.screen.width <= 1200 ? false : true
-  );  
+  );
 
   return (
     // Container
@@ -48,7 +48,7 @@ const MenuBar = () => {
       </div>
 
       <div
-        className={`absolute top-[47px] ${
+        className={`fixed top-[47px] ${
           isOpenMenu ? "left-[278px]" : "left-[120px]"
         } text-black cursor-pointer`}
         onClick={() => {
@@ -68,10 +68,10 @@ const MenuBar = () => {
           MAIN MENU
         </h1>
         <div className="ml-2 flex flex-col gap-2">
-          {param.pathname === `/` ? (
+          {param.pathname === `/dashboard` ? (
             <MenuItem
               visibility={isOpenMenu ? "" : "hidden"}
-              page=""
+              page="dashboard"
               name={isOpenMenu ? "Dashboard" : ""}
               Icon={RiDashboardFill}
               active
@@ -79,7 +79,7 @@ const MenuBar = () => {
           ) : (
             <MenuItem
               visibility={isOpenMenu ? "" : "hidden"}
-              page=""
+              page="dashboard"
               name={isOpenMenu ? "Dashboard" : ""}
               Icon={RiDashboardFill}
             />

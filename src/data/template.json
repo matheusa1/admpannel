@@ -1,6 +1,7 @@
 {
   "data1": [
     {
+      "id": "1",
       "image": "/avatar/profile_photo-1.svg",
       "name": "Sierra Ferguson",
       "phone": "+998 (99) 436-46-15",
@@ -18,9 +19,11 @@
       "totalFinished": 6,
       "birthDate": "9/5/1990",
       "state": "Created",
-      "timeWorking": "Some Time Ago"
+      "timeWorking": "Some Time Ago",
+      "totalCanceled": 9
     },
     {
+      "id": "2",
       "image": "/avatar/profile_photo-2.svg",
       "name": "Nataniel Lawrence",
       "phone": "+998 (99) 436-46-15",
@@ -38,9 +41,11 @@
       "totalFinished": 3,
       "birthDate": "6/5/1973",
       "state": "Active",
-      "timeWorking": "1 Month Ago"
+      "timeWorking": "1 Month Ago",
+      "totalCanceled": 1
     },
     {
+      "id": "3",
       "image": "/avatar/profile_photo-3.svg",
       "name": "Alberto Daniels",
       "phone": "+998 (99) 436-46-15",
@@ -58,9 +63,11 @@
       "totalFinished": 12,
       "birthDate": "11/4/1964",
       "state": "Created",
-      "timeWorking": "3 Days Ago"
+      "timeWorking": "3 Days Ago",
+      "totalCanceled": 15
     },
     {
+      "id": "4",
       "image": "/avatar/profile_photo-4.svg",
       "name": "Mary Mills",
       "phone": "+998 (99) 436-46-15",
@@ -78,9 +85,11 @@
       "totalFinished": 1,
       "birthDate": "11/3/1963",
       "state": "Active",
-      "timeWorking": "Some Time Ago"
+      "timeWorking": "Some Time Ago",
+      "totalCanceled": 12
     },
     {
+      "id": "5",
       "image": "/avatar/profile_photo-5.svg",
       "name": "Bessie Spencer",
       "phone": "+998 (99) 436-46-15",
@@ -98,7 +107,8 @@
       "totalFinished": 7,
       "birthDate": "1/2/1949",
       "state": "Active",
-      "timeWorking": "2 Weeks Ago"
+      "timeWorking": "2 Weeks Ago",
+      "totalCanceled": 5
     }
   ],
   "data2": [

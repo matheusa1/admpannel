@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
+
 import * as Checkbox from "@radix-ui/react-checkbox";
 import { RiCheckLine } from "react-icons/ri";
 
 interface Props {
+  id: string;
   firstName: string;
   lastName: string;
   birthDate: string;
@@ -11,8 +14,13 @@ interface Props {
 }
 
 const DriverInfo = (props: Props) => {
+  const navigate = useNavigate();
+
   return (
-    <div className="flex px-2 py-4 font-poppins font-medium text-sm items-center">
+    <div
+      onClick={() => navigate(`/driver/${props.id}`)}
+      className="flex px-2 py-4 font-poppins font-medium text-sm items-center cursor-pointer"
+    >
       <div className="basis-1/12">
         <Checkbox.Root className="w-6 h-6 bg-white border-2 rounded p-[2px] mx-auto">
           <Checkbox.Indicator>
@@ -28,7 +36,7 @@ const DriverInfo = (props: Props) => {
         {props.phone}
       </span>
       <div
-        className={`basis-3/12 flex justify-center rounded-full ${
+        className={`basis-3/12 py-1 flex justify-center rounded-full ${
           props.timeWorking.includes("Some")
             ? "bg-blue-300 text-blue-700"
             : "bg-red-300 text-red-700"

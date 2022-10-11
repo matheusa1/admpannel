@@ -22,9 +22,10 @@ module.exports = {
         bgGreenActive: "#24C18F",
         gridHead: "#F7F8FA",
         "light-gray": "#EFF0F4",
+        switchActive: "rgba(51, 102, 255, 0.2)",
       },
       backgroundImage: {
-        shs: "linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 66.67%);",
+        shs: "linear-gradient(270deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 66.67%)",
       },
     },
   },

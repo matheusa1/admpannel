@@ -16,7 +16,7 @@ const Login = () => {
 
     console.log(data);
 
-    navigate("/");
+    navigate("/dashboard");
   }
 
   return (

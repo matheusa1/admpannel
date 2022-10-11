@@ -14,14 +14,15 @@ import Orders from "../pages/Orders";
 import Riders from "../pages/Riders";
 import Settings from "../pages/Settings";
 import Shift from "../pages/Shift";
+import DriverInformation from "../pages/DriverInformation";
 
 const AppRoutes = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
         <Route
-          path="/"
+          path="/dashboard"
           element={
             <Layout>
               <Dashboard />
@@ -105,6 +106,14 @@ const AppRoutes = () => {
           element={
             <Layout>
               <Shift />
+            </Layout>
+          }
+        />
+        <Route
+          path="/driver/:id"
+          element={
+            <Layout>
+              <DriverInformation />
             </Layout>
           }
         />
