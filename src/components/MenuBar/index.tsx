@@ -48,7 +48,7 @@ const MenuBar = () => {
       </div>
 
       <div
-        className={`fixed top-[47px] ${
+        className={`absolute top-[47px] ${
           isOpenMenu ? "left-[278px]" : "left-[120px]"
         } text-black cursor-pointer`}
         onClick={() => {
