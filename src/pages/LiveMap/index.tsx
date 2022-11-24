@@ -1,11 +1,16 @@
-import Mapa from "../../assets/images/Mapa2.svg";
+import Map from "../../components/Map"
 
 const LiveMap = () => {
   return (
-    <div className="w-full flex justify-center mt-10">
-      <img src={Mapa} alt="Mapa" className="w-full"/>
-    </div>
-  );
-};
+    <Map
+      center={{
+        lat: -20,
+        lng: -50,
+      }}
+      zoom={13}
+      style="h-full rounded-xl"
+    />
+  )
+}
 
-export default LiveMap;
+export default LiveMap
