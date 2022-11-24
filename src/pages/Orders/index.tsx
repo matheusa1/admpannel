@@ -1,8 +1,8 @@
-import * as Checkbox from "@radix-ui/react-checkbox";
-import { RiCheckLine } from "react-icons/ri";
-
-import Map from "../../assets/images/map.svg";
-import SelectClass from "../../components/SelectClass";
+import * as Checkbox from "@radix-ui/react-checkbox"
+import { RiCheckLine } from "react-icons/ri"
+// import Map from "../../assets/images/map.svg";
+import Map from "../../components/Map"
+import SelectClass from "../../components/SelectClass"
 
 const Orders = () => {
   return (
@@ -11,12 +11,21 @@ const Orders = () => {
         Knowledge base
       </header>
       <div className="grid grid-cols-3 grid-rows-2 gap-6">
-        <img src={Map} className="col-span-3 w-full rounded-xl" />
-
+        {/* <img src={Map} className="col-span-3 w-full rounded-xl" /> */}
+        <Map
+          center={{
+            lat: -20,
+            lng: -50,
+          }}
+          zoom={13}
+          style="col-span-3 w-full rounded-xl"
+        />
         <div className="col-span-2 p-6 flex flex-col shadow-xl rounded-xl border-[1px] border-light-gray">
           <div className="w-full gap-5 flex mb-4">
-            <div className="flex flex-col w-full">  
-              <label htmlFor="number" className="mb-2 font-sans text-sm font-semibold ">
+            <div className="flex flex-col w-full">
+              <label
+                htmlFor="number"
+                className="mb-2 font-sans text-sm font-semibold ">
                 Phone number:
               </label>
               <input
@@ -27,7 +36,9 @@ const Orders = () => {
               />
             </div>
             <div className="flex flex-col w-full">
-              <label htmlFor="payment" className="mb-2 font-sans text-sm font-semibold">
+              <label
+                htmlFor="payment"
+                className="mb-2 font-sans text-sm font-semibold">
                 Payment:
               </label>
               <input
@@ -52,11 +63,17 @@ const Orders = () => {
           </div>
 
           <div className="flex flex-col h-full">
-            <label htmlFor="textarea" className="mb-2 font-sans text-sm font-semibold">Comment:</label>
-            <textarea className="p-3 w-full h-full border-[1px] border-light-gray rounded-xl" id="textarea" placeholder="You can leave your opinion"></textarea>
+            <label
+              htmlFor="textarea"
+              className="mb-2 font-sans text-sm font-semibold">
+              Comment:
+            </label>
+            <textarea
+              className="p-3 w-full h-full border-[1px] border-light-gray rounded-xl"
+              id="textarea"
+              placeholder="You can leave your opinion"></textarea>
           </div>
         </div>
-
 
         <div className="shadow-xl rounded-xl">
           <div className="grid grid-cols-2 bg-light-gray rounded-t-xl h-10 items-center font-mont font-semibold text-sm border-[1px] border-light-gray">
@@ -64,15 +81,28 @@ const Orders = () => {
             <span className="mx-auto">Price</span>
           </div>
           <div>
-            <SelectClass name="Start" price="30 000 SUM" active />
-            <SelectClass name="Comfort" price="30 000 SUM" />
-            <SelectClass name="Standard" price="30 000 SUM" />
-            <SelectClass name="Labo" price="30 000 SUM" />
+            <SelectClass
+              name="Start"
+              price="30 000 SUM"
+              active
+            />
+            <SelectClass
+              name="Comfort"
+              price="30 000 SUM"
+            />
+            <SelectClass
+              name="Standard"
+              price="30 000 SUM"
+            />
+            <SelectClass
+              name="Labo"
+              price="30 000 SUM"
+            />
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Orders;
+export default Orders
